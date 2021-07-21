@@ -7,7 +7,7 @@ const Sidebar = () => {
     return (
         <div>
             <img src="/img/profil.jpg" alt="user avatar" className="w-32 h-32 mx-auto rounded-full"/>
-            <h3 className="mt-4 text-3xl font-medium tracking-wider font-kaushan lg:text-xl">
+            <h3 className="mt-4 text-3xl font-medium tracking-wider font-kaushan min-w-max xl:text-base">
                 <span className="text-green">Rohmat </span>
                 Syamsul Huda
             </h3>
