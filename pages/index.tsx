@@ -1,39 +1,27 @@
-import { GetServerSidePropsContext, GetStaticPropsContext } from 'next'
+import ServiceCard from '../components/ServiceCard'
 import {services} from '../data'
 
-const index = ({services}) => {
-  console.log("Client",services)
+const index = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <div className="flex flex-col flex-grow px-6">
+      <h5 className="my-1 font-medium">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, nemo sapiente eius aspernatur molestias molestiae. Porro voluptatem inventore, libero earum suscipit consequuntur, aperiam dolore, consectetur officia dolor soluta a qui!
+      </h5>
+      <div className="flex-grow p-5 mt-1 bg-gray-400" style={{marginLeft:"-1.5rem",marginRight:"-1.5rem"}}>
+        <h4 className="my-2 text-xl font-bold tracking-wide">What I Offer</h4>        
+        <div className="grid gap-6 mt-2 lg:grid-cols-2">
+          {
+            services.map((service,index)=>(
+              <div className="bg-gray-200 rounded-lg lg:col-span-1" key={index}>
+                <ServiceCard service={service}/> 
+              </div>
+            )
+            )
+          }
+        </div>
+      </div>
+    </div>    
   )
 }
 
 export default index
-
-// export const getServerSideProps = async (contect:GetServerSidePropsContext) =>{
-//   //calculation
-//   const res = await fetch('http://localhost:3000/api/services')
-//   const data = await res.json()
-// console.log("server", services)
-
-//   return {
-//     props:{
-//       services:data.services
-//     }
-//   }
-// }
-
-export const getServerStaticProps = async (contect:GetStaticPropsContext) =>{
-  //calculation
-  const res = await fetch('http://localhost:3000/api/services')
-  const data = await res.json()
-console.log("server", services)
-
-  return {
-    props:{
-      services:data.services
-    }
-  }
-}
