@@ -3,7 +3,7 @@ import { AiFillGithub, AiFillProject } from "react-icons/ai"
 import { MdClose } from "react-icons/md"
 import { IProject } from "../types"
 
-const ProjectCard:FunctionComponent<{project:IProject}> = ({project:{name,image_path,category,deployed_url,description,github_url,key_techs}}) => {
+const ProjectCard:FunctionComponent<{project:IProject}> = ({project:{name,image_path,deployed_url,description,github_url,key_techs}}) => {
     const [showDetail, setShowDetail] = useState(false)
     return (
         <>

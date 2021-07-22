@@ -1,11 +1,26 @@
+import { useState } from "react"
 import ProjectCard from "../components/ProjectCard"
-import { projects } from "../data"
+import ProjectNavbar from "../components/ProjectNavbar"
+import { projects as projectsData } from "../data"
+import { Category } from "../types"
 
 const Projects = () => {
-    return (
-        <div className="p-4 py-2 overflow-scroll" style={{height:'65vh'}}>
-            <nav>Navbar</nav>
+    const [projects, setProjects] = useState(projectsData);
+    const [active, setActive] = useState('all')
 
+    const hanldlerFilterCategory = (category:Category | 'all') =>{
+        if(category === 'all'){
+            setProjects(projectsData);
+            setActive(category);
+            return;
+        }
+        const newArray = projectsData.filter((project)=>project.category.includes(category));
+        setProjects(newArray);
+        setActive(category);
+    }
+    return (
+        <div className="p-4 py-2 overflow-y-auto" style={{height:'80vh'}}>
+            <ProjectNavbar hanldlerFilterCategory={hanldlerFilterCategory} active={active}/>
             <div className='relative grid grid-cols-12 gap-4 my-3'>
                 {
                 projects.map((project,i)=>(

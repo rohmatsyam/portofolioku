@@ -108,5 +108,59 @@ export const projects:IProject[] = [
     github_url:'https://github.com/rohmatsyam/github-finder',
     category:['react'],
     key_techs:['React']
-  }
+  },
+  {
+    name: "Github Finder",
+    description: "Search github user by username",
+    image_path:'/img/projects/github-finder.jpg',
+    deployed_url:'https://rohmatsyam.github.io/github-finder/',
+    github_url:'https://github.com/rohmatsyam/github-finder',
+    category:['react'],
+    key_techs:['React']
+  },
+  {
+    name: "Github Finder",
+    description: "Search github user by username",
+    image_path:'/img/projects/github-finder.jpg',
+    deployed_url:'https://rohmatsyam.github.io/github-finder/',
+    github_url:'https://github.com/rohmatsyam/github-finder',
+    category:['react'],
+    key_techs:['React']
+  },
+  {
+    name: "Github Finder",
+    description: "Search github user by username",
+    image_path:'/img/projects/github-finder.jpg',
+    deployed_url:'https://rohmatsyam.github.io/github-finder/',
+    github_url:'https://github.com/rohmatsyam/github-finder',
+    category:['react'],
+    key_techs:['React']
+  },
+  {
+    name: "Github Finder",
+    description: "Search github user by username",
+    image_path:'/img/projects/github-finder.jpg',
+    deployed_url:'https://rohmatsyam.github.io/github-finder/',
+    github_url:'https://github.com/rohmatsyam/github-finder',
+    category:['express'],
+    key_techs:['React']
+  },
+  {
+    name: "Github Finder",
+    description: "Search github user by username",
+    image_path:'/img/projects/github-finder.jpg',
+    deployed_url:'https://rohmatsyam.github.io/github-finder/',
+    github_url:'https://github.com/rohmatsyam/github-finder',
+    category:['node'],
+    key_techs:['React']
+  },
+  {
+    name: "Github Finder",
+    description: "Search github user by username",
+    image_path:'/img/projects/github-finder.jpg',
+    deployed_url:'https://rohmatsyam.github.io/github-finder/',
+    github_url:'https://github.com/rohmatsyam/github-finder',
+    category:['mongo'],
+    key_techs:['React']
+  },
 ]
