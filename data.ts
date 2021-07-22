@@ -2,7 +2,8 @@ import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
-import {IService} from "./types";
+import {IService, ISkill} from "./types";
+import {BsCircleFill} from 'react-icons/bs'
 
 export const services: IService[] = [
   {
@@ -41,3 +42,59 @@ export const services: IService[] = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
   },
 ];
+
+export const languages:ISkill[] = [
+  {
+    name:"Javascript",
+    level:"85",
+    Icon:BsCircleFill
+  },
+  {
+    name:"Python",
+    level:"75",
+    Icon:BsCircleFill
+  },
+  {
+    name:"Java",
+    level:"80",
+    Icon:BsCircleFill
+  },
+  {
+    name:"4",
+    level:"70",
+    Icon:BsCircleFill
+  },
+  {
+    name:"5",
+    level:"70",
+    Icon:BsCircleFill
+  },
+  {
+    name:"6",
+    level:"60",
+    Icon:BsCircleFill
+  },
+]
+
+export const tools:ISkill[] = [
+  {
+    name:"Docker",
+    level:"85",
+    Icon:BsCircleFill
+  },
+  {
+    name:"Figma",
+    level:"85",
+    Icon:BsCircleFill
+  },
+  {
+    name:"VSCode",
+    level:"85",
+    Icon:BsCircleFill
+  },
+  {
+    name:"Photoshop",
+    level:"85",
+    Icon:BsCircleFill
+  },
+]
