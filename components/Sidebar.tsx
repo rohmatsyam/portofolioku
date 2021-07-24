@@ -22,13 +22,13 @@ const Sidebar = () => {
             
             {/* Sosial Icons */}
             <div className="flex justify-around w-9/12 mx-auto my-4 text-green-400 md:w-full">
-                <a href="https://github.com/rohmatsyam">
+                <a href="https://github.com/rohmatsyam" aria-label="Github">
                     <AiFillGithub className="w-8 h-8 cursor-pointer"/>
                 </a>
-                <a href="https://www.instagram.com/rohmat_syam">
+                <a href="https://www.instagram.com/rohmat_syam" aria-label="Instagram">
                     <AiFillInstagram className="w-8 h-8 cursor-pointer"/>
                 </a>
-                <a href="https://www.facebook.com/rohmatsyam99">
+                <a href="https://www.facebook.com/rohmatsyam99" aria-label="Facebook">
                     <AiFillFacebook className="w-8 h-8 cursor-pointer"/>
                 </a>
             </div>
