@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FunctionComponent, useState } from "react"
 import { AiFillGithub, AiFillProject } from "react-icons/ai"
 import { MdClose } from "react-icons/md"
-import { fadeInUp, stagger } from "../pages/animations";
+import { fadeInUp, stagger } from "./animations";
 import { IProject } from "../types"
 
 const ProjectCard:FunctionComponent<{project:IProject;showDetail:null|number;setShowDetail:(id:null|number)=>void;}> = 

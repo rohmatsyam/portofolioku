@@ -1,7 +1,7 @@
 import Bar from "../components/Bar"
 import { languages, tools } from "../data"
 import {motion} from 'framer-motion'
-import {fadeInUp, routeAnimation} from './animations'
+import {fadeInUp, routeAnimation} from '../components/animations'
 
 const resume = () => {
     
