@@ -9,7 +9,7 @@ const Sidebar = () => {
 
     return (
         <>
-            <Image src="/img/profil.jpg" alt="user avatar" width={128} height={128} className="mx-auto rounded-full"/>
+            <Image src="/img/profil.jpg" alt="user avatar" width={128} height={128} className="mx-auto rounded-full" layout="intrinsic"/>
             <h3 className="mt-4 text-3xl font-medium tracking-wider font-kaushan min-w-max xl:text-base">
                 <span className="text-green">Rohmat </span>
                 Syamsul Huda
