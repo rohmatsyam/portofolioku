@@ -5,6 +5,7 @@ import ProjectNavbar from "../components/ProjectNavbar"
 import { projects as projectsData } from "../data"
 import { Category } from "../types"
 import { fadeInUp, routeAnimation, stagger } from "../components/animations"
+import Head from "next/head"
 
 const Projects = () => {            
     const [projects, setProjects] = useState(projectsData);
@@ -20,6 +21,9 @@ const Projects = () => {
     }    
     return (
         <motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit" className="p-4 py-2 overflow-y-auto" style={{height:'75vh'}}>
+            <Head>
+            <title>Rohmat | Projects</title>
+            </Head>
             <ProjectNavbar hanldlerFilterCategory={hanldlerFilterCategory} active={active}/>
             <motion.div variants={stagger} initial="initial" animate="animate" className='relative grid grid-cols-12 gap-4 my-3'>                
                 {projects.length > 0?(

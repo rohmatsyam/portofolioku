@@ -2,10 +2,14 @@ import ServiceCard from '../components/ServiceCard'
 import {services} from '../data'
 import { motion } from 'framer-motion'
 import { fadeInUp, routeAnimation, stagger } from '../components/animations'
+import Head from 'next/head'
 
 const index = () => {
   return (
     <motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit" className="flex flex-col flex-grow px-6">
+      <Head>
+        <title>Rohmat | Portofolio</title>
+      </Head>
       <h3 className="my-1 font-medium">
       Sedang belajar dan terus belajar.       
       </h3>
