@@ -46,12 +46,12 @@ export const services: IService[] = [
 export const languages:ISkill[] = [
   {
     name:"Javascript",
-    level:"85",
+    level:"95",
     Icon:BsCircleFill
-  },
+  },  
   {
-    name:"Python",
-    level:"75",
+    name:"PHP",
+    level:"92",
     Icon:BsCircleFill
   },
   {
@@ -60,36 +60,26 @@ export const languages:ISkill[] = [
     Icon:BsCircleFill
   },
   {
-    name:"4",
-    level:"70",
+    name:"Python",
+    level:"85",
     Icon:BsCircleFill
-  },
-  {
-    name:"5",
-    level:"70",
-    Icon:BsCircleFill
-  },
-  {
-    name:"6",
-    level:"60",
-    Icon:BsCircleFill
-  },
+  }  
 ]
 
 export const tools:ISkill[] = [
   {
-    name:"Docker",
+    name:"VSCode",
     level:"85",
     Icon:BsCircleFill
   },
   {
     name:"Figma",
-    level:"85",
+    level:"90",
     Icon:BsCircleFill
   },
   {
-    name:"VSCode",
-    level:"85",
+    name:"Docker",
+    level:"80",
     Icon:BsCircleFill
   },
   {
@@ -101,6 +91,7 @@ export const tools:ISkill[] = [
 
 export const projects:IProject[] = [
   {
+    id:1,
     name: "Github Finder",
     description: "Search github user by username",
     image_path:'/img/projects/github-finder.jpg',
@@ -108,59 +99,5 @@ export const projects:IProject[] = [
     github_url:'https://github.com/rohmatsyam/github-finder',
     category:['react'],
     key_techs:['React']
-  },
-  {
-    name: "Github Finder",
-    description: "Search github user by username",
-    image_path:'/img/projects/github-finder.jpg',
-    deployed_url:'https://rohmatsyam.github.io/github-finder/',
-    github_url:'https://github.com/rohmatsyam/github-finder',
-    category:['react'],
-    key_techs:['React']
-  },
-  {
-    name: "Github Finder",
-    description: "Search github user by username",
-    image_path:'/img/projects/github-finder.jpg',
-    deployed_url:'https://rohmatsyam.github.io/github-finder/',
-    github_url:'https://github.com/rohmatsyam/github-finder',
-    category:['react'],
-    key_techs:['React']
-  },
-  {
-    name: "Github Finder",
-    description: "Search github user by username",
-    image_path:'/img/projects/github-finder.jpg',
-    deployed_url:'https://rohmatsyam.github.io/github-finder/',
-    github_url:'https://github.com/rohmatsyam/github-finder',
-    category:['react'],
-    key_techs:['React']
-  },
-  {
-    name: "Github Finder",
-    description: "Search github user by username",
-    image_path:'/img/projects/github-finder.jpg',
-    deployed_url:'https://rohmatsyam.github.io/github-finder/',
-    github_url:'https://github.com/rohmatsyam/github-finder',
-    category:['express'],
-    key_techs:['React']
-  },
-  {
-    name: "Github Finder",
-    description: "Search github user by username",
-    image_path:'/img/projects/github-finder.jpg',
-    deployed_url:'https://rohmatsyam.github.io/github-finder/',
-    github_url:'https://github.com/rohmatsyam/github-finder',
-    category:['node'],
-    key_techs:['React']
-  },
-  {
-    name: "Github Finder",
-    description: "Search github user by username",
-    image_path:'/img/projects/github-finder.jpg',
-    deployed_url:'https://rohmatsyam.github.io/github-finder/',
-    github_url:'https://github.com/rohmatsyam/github-finder',
-    category:['mongo'],
-    key_techs:['React']
-  },
+  }  
 ]

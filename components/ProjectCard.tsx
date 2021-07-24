@@ -6,19 +6,20 @@ import { MdClose } from "react-icons/md"
 import { fadeInUp, stagger } from "../pages/animations";
 import { IProject } from "../types"
 
-const ProjectCard:FunctionComponent<{project:IProject}> = ({project:{name,image_path,deployed_url,description,github_url,key_techs}}) => {
-    const [showDetail, setShowDetail] = useState(false)
+const ProjectCard:FunctionComponent<{project:IProject;showDetail:null|number;setShowDetail:(id:null|number)=>void;}> = 
+({project:{id,name,image_path,deployed_url,description,github_url,key_techs}
+    ,showDetail,setShowDetail}) => {    
     return (
         <>
-            {/* <img src={image_path} alt={name} onClick={() => setShowDetail(true)} className="cursor-pointer"/> */}
-            <Image src={image_path} alt={name} onClick={() => setShowDetail(true)} className="cursor-pointer" width="300" height="150" layout="responsive"/>
+            {/* <img src={image_path} alt={name} onClick={() => setShowDetail(true)} className="cursor-pointer"/> */}            
+            <Image src={image_path} alt={name} onClick={() => setShowDetail(id)} className="cursor-pointer" width="300" height="150" layout="responsive"/>
             <p className='my-2 text-center'>{name}</p>
             
-            {showDetail && (
-            <div className="absolute top-0 left-0 z-50 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
+            {showDetail === id && (
+            <div className="absolute top-0 left-0 z-50 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
                 <motion.div variants={stagger} initial="initial" animate="animate">                    
-                    <motion.div variants={fadeInUp}>
-                    <Image src={image_path} alt={name} width="300" height="150" layout="responsive"/>
+                    <motion.div variants={fadeInUp} className="border-4 border-gray-100">
+                        <Image src={image_path} alt={name} width="300" height="150" layout="responsive"/>
                     </motion.div>
                     <motion.div variants={fadeInUp} className='flex justify-center my-4 space-x-3'>
                         <a href={github_url} className='flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200'>
@@ -38,7 +39,7 @@ const ProjectCard:FunctionComponent<{project:IProject}> = ({project:{name,image_
                 </motion.div>
 
                 <button className='absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-100'
-                onClick={()=>setShowDetail(false)}
+                onClick={()=>setShowDetail(null)}
                 >
                     <MdClose size={30} />
                 </button>

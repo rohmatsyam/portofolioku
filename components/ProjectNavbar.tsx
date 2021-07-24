@@ -18,7 +18,7 @@ const ProjectNavbar:FunctionComponent<{hanldlerFilterCategory:Function,active:st
             <NavItem value="react" {...props}/>            
             <NavItem value="node" {...props}/>            
             <NavItem value="mongo" {...props}/>            
-            <NavItem value="express" {...props}/>            
+            <NavItem value="express" {...props}/>                        
         </div>
     )
 }

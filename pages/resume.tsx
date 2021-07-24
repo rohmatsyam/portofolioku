@@ -10,19 +10,19 @@ const resume = () => {
             {/* Education & Experience */}
             <div className="grid gap-6 md:grid-cols-2">
                 <motion.div variants={fadeInUp} initial="initial" animate="animate">
-                    <h3 className="text-2xl font-bold">Education</h3>
+                    <h3 className="text-2xl font-bold">Pendidikan</h3>
                     <div>
-                        <h6 className="my-1 text-xl font-bold">Universitas Nusantara PGRI Kediri</h6>
-                        <p className="my-1 font-semibold">Lorem ipsum dolor sit amet.</p>
-                        <p className="my-1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <h6 className="my-1 text-xl font-bold">Teknik Informatika</h6>
+                        <p className="my-1 font-semibold">Universitas Nusantara PGRI Kediri</p>
+                        <p className="my-1">Saat ini saya sedang mengejar gelar S.Kom</p>
                     </div>
                 </motion.div>
                 <motion.div variants={fadeInUp} initial="initial" animate="animate">
-                    <h3 className="text-2xl font-bold">Experiece</h3>
+                    <h3 className="text-2xl font-bold">Pengalaman</h3>
                     <div>
-                        <h6 className="my-1 text-xl font-bold">Universitas Nusantara PGRI Kediri</h6>
-                        <p className="my-1 font-semibold">Lorem ipsum dolor sit amet.</p>
-                        <p className="my-1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <h6 className="my-1 font-semibold">Web Developer Jr.</h6>
+                        <p className="my-1 font-semibold">Newbie Graphic Designer</p>
+                        {/* <p className="my-1">Lorem ipsum dolor sit amet consectetur adipisicing.</p> */}
                     </div>
                 </motion.div>
             </div>

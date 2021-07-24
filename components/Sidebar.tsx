@@ -10,12 +10,12 @@ const Sidebar = () => {
     return (
         <>
             <Image src="/img/profil.jpg" alt="user avatar" width={128} height={128} className="mx-auto rounded-full" layout="intrinsic"/>
-            <h3 className="mt-4 text-3xl font-medium tracking-wider font-kaushan min-w-max xl:text-base">
+            <h3 className="mt-4 text-3xl font-bold tracking-wider font-kaushan min-w-max xl:text-base">
                 <span className="text-green">Rohmat </span>
                 Syamsul Huda
             </h3>
-            <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">Web Developer</p>
-            <a className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200"
+            <p className="px-2 py-1 my-3 font-semibold bg-gray-200 rounded-full dark:bg-dark-200">Mahasiswa</p>
+            <a className="flex items-center justify-center px-2 py-1 my-3 font-semibold bg-gray-200 rounded-full dark:bg-dark-200"
             href="" download="name">
                 <GiTie className="w-6 h-6"/>Download Resume
             </a>
