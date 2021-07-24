@@ -16,19 +16,19 @@ const Sidebar = () => {
             </h3>
             <p className="px-2 py-1 my-3 font-semibold bg-gray-200 rounded-full dark:bg-dark-200">Mahasiswa</p>
             <a className="flex items-center justify-center px-2 py-1 my-3 font-semibold bg-gray-200 rounded-full dark:bg-dark-200"
-            href="" download="name">
+            href="" download="">
                 <GiTie className="w-6 h-6"/>Download Resume
             </a>
             
             {/* Sosial Icons */}
             <div className="flex justify-around w-9/12 mx-auto my-4 text-green-400 md:w-full">
-                <a href="">
+                <a href="https://github.com/rohmatsyam">
                     <AiFillGithub className="w-8 h-8 cursor-pointer"/>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/rohmat_syam">
                     <AiFillInstagram className="w-8 h-8 cursor-pointer"/>
                 </a>
-                <a href="">
+                <a href="https://www.facebook.com/rohmatsyam99">
                     <AiFillFacebook className="w-8 h-8 cursor-pointer"/>
                 </a>
             </div>
