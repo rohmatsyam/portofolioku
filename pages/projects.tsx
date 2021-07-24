@@ -4,7 +4,9 @@ import ProjectCard from "../components/ProjectCard"
 import ProjectNavbar from "../components/ProjectNavbar"
 import { projects as projectsData } from "../data"
 import { Category } from "../types"
-import { fadeInUp, routeAnimation, stagger } from "../components/animations"
+import fadeInUp from '../components/anim/fadeInUp'
+import stagger from '../components/anim/stagger'
+import routeAnimation from '../components/anim/routeAnimation'
 import Head from "next/head"
 
 const Projects = () => {            

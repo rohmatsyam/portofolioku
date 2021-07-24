@@ -1,7 +1,9 @@
 import ServiceCard from '../components/ServiceCard'
 import {services} from '../data'
 import { motion } from 'framer-motion'
-import { fadeInUp, routeAnimation, stagger } from '../components/animations'
+import fadeInUp from '../components/anim/fadeInUp'
+import stagger from '../components/anim/stagger'
+import routeAnimation from '../components/anim/routeAnimation'
 import Head from 'next/head'
 
 const index = () => {
